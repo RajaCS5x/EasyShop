@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.header{
+  
+  background: url('../image/banner-bg.webp')  no-repeat ;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  box-shadow: 1px 1px 15px black;
+  border-radius: 5rem;
+  transition: ease-in-out 0.3s;
+}
+.card:hover{
+  box-shadow: 1px 1px 15px white;
+}
+
+
+.card .login-form{
+  width:35rem;
+  box-shadow: var(--box-shadow);
+  padding:2rem;
+  border-radius: 1.5rem;
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(253,123,45,1) 100%);
+  text-align: center;
+}
+
+
+.header .login-form h3{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #130f40;
+}
+
+.header .login-form .box{
+width: 80%;
+margin:.7rem 0;
+background:#eee;
+border-radius: .5rem;
+padding:.2rem;
+font-size: 1rem;
+color:black;
+text-transform: none;
+}
+
+.header .login-form p{
+font-size: 1rem;
+padding:.5rem 0;
+
+}
+
+.header .login-form p a{
+color:rgb(255, 106, 0);
+text-decoration: underline;
+}
+.login-form .btn{
+  width: 10rem;
+padding: .5rem;
+border-radius: .5rem;
+border: none;
+transition: ease-in-out 0.3s;
+}
+.login-form .btn:hover {
+background-color: orangered;
+color: #eee;
+cursor: pointer;
+box-shadow: .5px .5px 5px black;
+}
+
+.header .logo{
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #130f40;
+  padding: 1rem;
+  
+  line-height: 5rem;
+}
+
+.login-form .forget{
+  border: none;
+  border-radius: 5rem;
+  width: 15rem;
+  height: 1.7rem;
+  transition: ease-in-out 0.3s;
+  padding: 1rem;
+  display: none;
+  
+}
+.login-form .forget-btn{
+  width: 4rem;
+  background-color: #eee;
+  border: #130f40;
+  height: 2rem;
+  border-radius: 2rem;
+  display: none;
+  transition: ease-in-out 0.3s;
+}
+.login-form .forget-btn:hover {
+  background-color: orangered;
+  color: #eee;
+  cursor: pointer;
+  box-shadow: .1px .2px 5px black;
+  }
+.login-form .forget:hover{
+  box-shadow: 1px 1px 5px black;
+}
