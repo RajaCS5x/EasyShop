@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EasyShop_Form</title>
+  <link rel="shortcut icon" href="image/th.jpeg">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+  <div class="header">
+    <div class="card">
+
+
+  <form action="" class="login-form">
+    <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> EasyShop </a>
+
+    <h3>login now</h3>
+    <input type="email" placeholder="email" class="box" id="b1">
+    <input type="password" placeholder="password" class="box" id="b2">
+    <p class="para">forget your password <a href="#" onclick="pass()">click here</a></p>
+    <input type="text" title="ck" class="forget" placeholder="Enter New Password" >
+    <input type="submit" value="SAVE" class="forget-btn" onclick="passkey()">
+    <p class="para1">don't have an account <a href="#" onclick="create()">create now</a></p>
+    <input type="button" value="login now" class="btn" onclick="auth()" >
+</form>
+  </div>
+  </div>
+
+  <script>
+    var p = "123";
+function auth(){
+  var email = document.getElementById("b1").value;
+  var password = document.getElementById("b2").value;
+  
+  
+  if(email == "masterkrish220@gmail.com" && password == p)
+  {
+      window.location.replace("home.html");     
+  
+  }
+  else {
+    var email = document.getElementById("b1").style.borderColor='red';
+    var password = document.getElementById("b2").style.borderColor='red';;
+     alert("Invalid information");
+      return ;
+  }
+}
+
+function create(){
+document.querySelector('h3').innerHTML='SIGNUP NOW';
+document.querySelector('.para').style.display='none';
+document.querySelector('.para1').style.display='none';
+document.querySelector('.btn').setAttribute('value','SIGNUP');
+
+}
+function pass(){  document.querySelector('.forget').style.display='inline';
+document.querySelector('.forget-btn').style.display='inline';
+
+}
+
+function passkey(){
+  var pass=document.querySelector(".forget").value;
+  p=pass;
+
+  document.querySelector('.forget').style.display='none';
+document.querySelector('.forget-btn').style.display='none';
+
+
+}
+  </script>
+
+
+
+</body>
+</html>
