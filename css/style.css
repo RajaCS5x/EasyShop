@@ -194,8 +194,8 @@ section{
     box-shadow: var(--box-shadow);
     width:35rem;
     background: var(--card);
-    
-    overflow: auto;
+    height: 50rem;
+    overflow: scroll;
     
 }
 .header .shopping-cart h1{
