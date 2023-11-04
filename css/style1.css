@@ -5,9 +5,23 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+:root{
+  --green:#1b4d3e;
+  --orange:orange;
+  --lightgreen:#74C365;
+  --black:#000000;
+  --card: radial-gradient(circle, rgba(2,88,43,1) 0%, rgba(102,102,102,1) 100%);
+  --light-color:#666;
+  --box-shadow:0.8rem .8rem 18px rgba(0,0,0,1);
+  --border:.2rem solid rgba(0,0,0,0.1);
+  --outline:.1rem solid rgb(255, 255, 255);
+  --outline-hover:.2rem solid var(--black);
+}
 .header{
   
-  background: url('../image/banner-bg.webp')  no-repeat ;
+  background: url(../image/loginBack.jpg);
+  
+  opacity: 0.95;
   background-size: 100% 100%;
   width: 100%;
   height: 100vh;
@@ -15,41 +29,42 @@
   justify-content: center;
   align-items: center;
 }
-.card{
-  box-shadow: 1px 1px 15px black;
-  border-radius: 5rem;
-  transition: ease-in-out 0.3s;
+.card .login-form #name,#name1{
+  display: none;
 }
-.card:hover{
-  box-shadow: 1px 1px 15px white;
-}
+
 
 
 .card .login-form{
+  opacity: 0.9;
   width:35rem;
   box-shadow: var(--box-shadow);
   padding:2rem;
   border-radius: 1.5rem;
-  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(253,123,45,1) 100%);
+  background: var(--light-color);
   text-align: center;
+  transition: ease-in-out 0.4s;
 }
-
+.card .login-form:hover{
+  box-shadow:0.4rem .4rem 12px rgba(255,255,255,0.5);
+}
 
 .header .login-form h3{
   font-size: 1.5rem;
   text-transform: uppercase;
-  color: #130f40;
+  color: var(--black);
 }
 
 .header .login-form .box{
 width: 80%;
 margin:.7rem 0;
 background:#eee;
-border-radius: .5rem;
-padding:.2rem;
+border-radius: 1rem;
+padding:.5rem;
 font-size: 1rem;
 color:black;
 text-transform: none;
+border: none;
 }
 
 .header .login-form p{
@@ -59,27 +74,31 @@ padding:.5rem 0;
 }
 
 .header .login-form p a{
-color:rgb(255, 106, 0);
+  
+color:var(--green);
 text-decoration: underline;
 }
-.login-form .btn{
+.header .login-form p a:hover{
+  color:var(--lightgreen);
+}
+.login-form .btn,.btn1{
   width: 10rem;
 padding: .5rem;
 border-radius: .5rem;
 border: none;
 transition: ease-in-out 0.3s;
 }
-.login-form .btn:hover {
-background-color: orangered;
+.login-form .btn:hover,.btn1:hover {
+background-color: var(--green);
 color: #eee;
 cursor: pointer;
-box-shadow: .5px .5px 5px black;
+box-shadow: .1px .2px 8px black;
 }
 
 .header .logo{
   font-size: 1.8rem;
   text-decoration: none;
-  color: #130f40;
+  color: var(--black);
   padding: 1rem;
   
   line-height: 5rem;
@@ -98,14 +117,14 @@ box-shadow: .5px .5px 5px black;
 .login-form .forget-btn{
   width: 4rem;
   background-color: #eee;
-  border: #130f40;
+  border: none;
   height: 2rem;
   border-radius: 2rem;
   display: none;
   transition: ease-in-out 0.3s;
 }
 .login-form .forget-btn:hover {
-  background-color: orangered;
+  background-color: var(--green);
   color: #eee;
   cursor: pointer;
   box-shadow: .1px .2px 5px black;
