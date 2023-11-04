@@ -22,7 +22,7 @@
 
 <header class="header">
 
-    <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> EasyShop </a>
+    <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> <span>E</span>asyShop </a>
 
     <nav class="navbar">
         <a href="#home">home</a>
@@ -42,45 +42,91 @@
 
     <form action="" class="search-form">
         <input type="search" id="search-box" placeholder="search here...">
-        <label for="search-box" class="fas fa-search"></label>
+        <a href="#" onclick="searchform()"><i class="fas fa-search" ></i></a>
     </form>
 
     <div class="shopping-cart">
-        <div class="box">
-            <i class="fas fa-trash"></i>
-            <img src="image/cart-img-1.png" alt="">
-            <div class="content">
-                <h3>watermelon</h3>
-                <span class="price">$4.99/-</span>
-                <span class="quantity">qty : 1</span>
+        <h1><div class="fas fa-shopping-cart" id="cart-btn"></div> Shopping-Cart</h1>
+        <div class="box box1">
+            <img src="image/product-1.png" alt="">
+            <div class="content content1">
+                <h3>Orange</h3>
+                <span class="price">$<span>0</span>/-</span>
+                <span class="quantity">qty : <span>0</span></span>
             </div>
+            <i class="fas fa-trash" onclick="trash1()"></i>
         </div>
-        <div class="box">
-            <i class="fas fa-trash"></i>
-            <img src="image/cart-img-2.png" alt="">
-            <div class="content">
+        <div class="box box2">
+            <i class="fas fa-trash" onclick="trash2()"></i>
+            <img src="image/product-2.png" alt="">
+            <div class="content content2">
                 <h3>onion</h3>
-                <span class="price">$4.99/-</span>
-                <span class="quantity">qty : 1</span>
+                <span class="price">$<span>0</span>/-</span>
+                <span class="quantity">qty : <span>0</span></span>
             </div>
         </div>
-        <div class="box">
-            <i class="fas fa-trash"></i>
-            <img src="image/cart-img-3.png" alt="">
-            <div class="content">
+        <div class="box box3">
+            <i class="fas fa-trash" onclick="trash3()"></i>
+            <img src="image/product-3.png" alt="">
+            <div class="content content3">
                 <h3>chicken</h3>
-                <span class="price">$4.99/-</span>
-                <span class="quantity">qty : 1</span>
+                <span class="price">$<span>0</span>/-</span>
+                <span class="quantity">qty : <span>0</span></span>
             </div>
         </div>
-        <div class="total"> total : $19.69/- </div>
+        <div class="box box4">
+            <i class="fas fa-trash" onclick="trash4()"></i>
+            <img src="image/product-4.png" alt="">
+            <div class="content content4">
+                <h3>Cabbage</h3>
+                <span class="price">$<span>0</span>/-</span>
+                <span class="quantity">qty : <span>0</span></span>
+            </div>
+        </div>
+        <div class="box box5">
+            <i class="fas fa-trash" onclick="trash5()"></i>
+            <img src="image/product-5.png" alt="">
+            <div class="content content5">
+                <h3>Potato</h3>
+                <span class="price">$<span>0</span>/-</span>
+                <span class="quantity">qty : <span>0</span></span>
+            </div>
+        </div>
+        <div class="box box6">
+            <i class="fas fa-trash" onclick="trash6()"></i>
+            <img src="image/product-6.png" alt="">
+            <div class="content content6">
+                <h3>Avacado</h3>
+                <span class="price">$<span>0</span>/-</span>
+                <span class="quantity">qty : <span>0</span></span>
+            </div>
+        </div>
+        <div class="box box7">
+            <i class="fas fa-trash" onclick="trash7()"></i>
+            <img src="image/product-7.png" alt="">
+            <div class="content content7">
+                <h3>Carrot</h3>
+                <span class="price">$<span>0</span>/-</span>
+                <span class="quantity">qty : <span>0</span></span>
+            </div>
+        </div>
+        <div class="box box8">
+            <i class="fas fa-trash" onclick="trash8()"></i>
+            <img src="image/product-8.png" alt="">
+            <div class="content content8">
+                <h3>Lemon</h3>
+                <span class="price">$<span>0</span>/-</span>
+                <span class="quantity">qty : <span>0</span></span>
+            </div>
+        </div>
+        <div class="total"> total : $<span> 0</span>/- </div>
         <a href="#" class="btn">checkout</a>
     </div>
 
-    <form action="" class="login-form">
+    <form action="" class="login-form" class="homepage">
         <img src="image/th.jpeg" title="img">
 
-        <h3>Master Krish</h3>
+        <h3 class="avatar">Master</h3>
         <input type="submit" value="logout" class="btn" formaction="index.html">
     </form>
 
@@ -141,21 +187,21 @@
 
         <div class="swiper-wrapper">
 
-            <div class="swiper-slide box">
+            <div class="swiper-slide box" id="orange">
                 <img src="image/product-1.png" alt="">
-                <h3>fresh orange</h3>
+                <h3 >fresh orange</h3>
                 <div class="price"> $4.99/- - 10.99/- </div>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                    <i clss="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">add to cart</a>
+                <a class="btn" onclick="prod1()">add to cart</a>
             </div>
 
-            <div class="swiper-slide box">
+            <div class="swiper-slide box" id="onion">
                 <img src="image/product-2.png" alt="">
                 <h3>fresh onion</h3>
                 <div class="price"> $4.99/- - 10.99/- </div>
@@ -166,10 +212,10 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">add to cart</a>
+                <a class="btn" onclick="prod2()" >add to cart</a>
             </div>
 
-            <div class="swiper-slide box">
+            <div class="swiper-slide box" id="meat">
                 <img src="image/product-3.png" alt="">
                 <h3>fresh meat</h3>
                 <div class="price"> $4.99/- - 10.99/- </div>
@@ -180,10 +226,10 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">add to cart</a>
+                <a  class="btn" onclick="prod3()">add to cart</a>
             </div>
 
-            <div class="swiper-slide box">
+            <div class="swiper-slide box" id="cabbage">
                 <img src="image/product-4.png" alt="">
                 <h3>fresh cabbage</h3>
                 <div class="price"> $4.99/- - 10.99/- </div>
@@ -194,7 +240,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">add to cart</a>
+                <a  class="btn" onclick="prod4()">add to cart</a>
             </div>
 
         </div>
@@ -205,7 +251,7 @@
 
         <div class="swiper-wrapper">
 
-            <div class="swiper-slide box">
+            <div class="swiper-slide box" id="potato">
                 <img src="image/product-5.png" alt="">
                 <h3>fresh potato</h3>
                 <div class="price"> $4.99/- - 10.99/- </div>
@@ -216,10 +262,10 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">add to cart</a>
+                <a  class="btn" onclick="prod5()">add to cart</a>
             </div>
 
-            <div class="swiper-slide box">
+            <div class="swiper-slide box" id="avacado">
                 <img src="image/product-6.png" alt="">
                 <h3>fresh avocado</h3>
                 <div class="price"> $4.99/- - 10.99/- </div>
@@ -230,10 +276,10 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">add to cart</a>
+                <a  class="btn" onclick="prod6()">add to cart</a>
             </div>
 
-            <div class="swiper-slide box">
+            <div class="swiper-slide box" id="ocarrot">
                 <img src="image/product-7.png" alt="">
                 <h3>fresh carrot</h3>
                 <div class="price"> $4.99/- - 10.99/- </div>
@@ -244,10 +290,10 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">add to cart</a>
+                <a  class="btn" onclick="prod7()">add to cart</a>
             </div>
 
-            <div class="swiper-slide box">
+            <div class="swiper-slide box" id="lemon">
                 <img src="image/product-8.png" alt="">
                 <h3>green lemon</h3>
                 <div class="price"> $4.99/- - 10.99/- </div>
@@ -258,7 +304,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">add to cart</a>
+                <a  class="btn" onclick="prod8()">add to cart</a>
             </div>
 
         </div>
@@ -337,9 +383,9 @@
         <div class="swiper-wrapper">
 
             <div class="swiper-slide box">
-                <img src="image/pic-1.png" alt="">
+                <img src="image/1.jpg" alt="">
                 <p>Very good website. All the stuff on this website is absolutely great. You all can buy your stuff from here.</p>
-                <h3>john</h3>
+                <h3>Naruto</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -350,9 +396,9 @@
             </div>
 
             <div class="swiper-slide box">
-                <img src="image/pic-2.png" alt="">
+                <img src="image/2.jpg" alt="">
                 <p>Very good website. All the stuff on this website is absolutely great. You all can buy your stuff from here.</p>
-                <h3>Juliyana</h3>
+                <h3>Hinata</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -363,9 +409,9 @@
             </div>
 
             <div class="swiper-slide box">
-                <img src="image/pic-3.png" alt="">
+                <img src="image/3.jpg" alt="">
                 <p>Very good website. All the stuff on this website is absolutely great. You all can buy your stuff from here.</p>
-                <h3>Jonathon</h3>
+                <h3>Sasuke</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -376,9 +422,9 @@
             </div>
 
             <div class="swiper-slide box">
-                <img src="image/pic-4.png" alt="">
+                <img src="image/4.jpg" alt="">
                 <p>Very good website. All the stuff on this website is absolutely great. You all can buy your stuff from here.</p>
-                <h3>Oliveya</h3>
+                <h3>Sakura</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -412,7 +458,7 @@
                     <a href="#"> <i class="fas fa-calendar"></i> 1st oct, 2021 </a>
                 </div>
                 <h3>fresh and organic vegitables and fruits</h3>
-                <p>Organica Is Where Early Adopters And Innovation Sockers Find Lively, Imaginative Tech Before It Hits The Mainstream.</p>
+                <p>EasyShop Is Where Early Adopters And Innovation Sockers Find Lively, Imaginative Tech Before It Hits The Mainstream.</p>
                 <a href="#" class="btn">read more</a>
             </div>
         </div>
@@ -425,7 +471,7 @@
                     <a href="#"> <i class="fas fa-calendar"></i> 1st oct, 2021 </a>
                 </div>
                 <h3>fresh and organic vegitables and fruits</h3>
-                <p>Organica Is Where Early Adopters And Innovation Sockers Find Lively, Imaginative Tech Before It Hits The Mainstream.</p>
+                <p>EasyShop Is Where Early Adopters And Innovation Sockers Find Lively, Imaginative Tech Before It Hits The Mainstream.</p>
                 <a href="#" class="btn">read more</a>
             </div>
         </div>
@@ -438,7 +484,7 @@
                     <a href="#"> <i class="fas fa-calendar"></i> 1st oct, 2021 </a>
                 </div>
                 <h3>fresh and organic vegitables and fruits</h3>
-                <p>Organica Is Where Early Adopters And Innovation Sockers Find Lively, Imaginative Tech Before It Hits The Mainstream.</p>
+                <p>EasyShop Is Where Early Adopters And Innovation Sockers Find Lively, Imaginative Tech Before It Hits The Mainstream.</p>
                 <a href="#" class="btn">read more</a>
             </div>
         </div>
@@ -456,8 +502,8 @@
     <div class="box-container">
 
         <div class="box">
-            <h3> EasyShop <i class="fas fa-shopping-basket"></i> </h3>
-            <p>Hello my name is Krish singh Gour. I made this website for my project , I hope you all enjoy this.</p>
+            <h3> <span>E</span>asyShop <i class="fas fa-shopping-basket"></i> </h3>
+            <p>Hello my name is Raja Jadon. I made this website for my project , I hope you all enjoy this.</p>
             <div class="share">
                 <a href="#" class="fab fa-facebook-f"></a>
                 <a href="#" class="fab fa-twitter"></a>
@@ -470,7 +516,7 @@
             <h3>contact info</h3>
             <a href="#" class="links"> <i class="fas fa-phone"></i> +91 9131451010</a>
             <a href="#" class="links"> <i class="fas fa-phone"></i> +91 8306580374 </a>
-            <a href="#" class="links"> <i class="fas fa-envelope"></i> MasterKrish002@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> rajajadon002@gmail.com </a>
             <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> LPU Jalandhar-144411</a>
         </div>
 
@@ -492,7 +538,7 @@
 
     </div>
 
-    <div class="credit"> created by <span> Krish Singh Gour</span> | all rights reserved </div>
+    <div class="credit"> created by <span> Raja Jadon</span> | all rights reserved </div>
 
 </section>
 
@@ -502,6 +548,7 @@
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
+
 
 </body>
 </html>
