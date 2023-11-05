@@ -52,6 +52,11 @@ section{
     display: inline-block;
     padding:.5rem 3rem;
     clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+    transition: ease-in-out 0.4s;
+}
+.heading span:hover{
+    color:var(--green);
+    background: white;
 }
 
 .btn{
@@ -98,6 +103,7 @@ section{
 }
 .header .logo:hover{
     color:var(--card);
+    transform: scale(1.1);
 }
 .header .logo span{
 
@@ -115,7 +121,7 @@ section{
     font-size: 1.7rem;
     margin:0 1rem;
     color:white;
-    transition: ease-in-out 0.1s;
+    transition: ease-in-out 0.2s;
 }
 
 .header .navbar a:hover{
@@ -135,11 +141,14 @@ section{
     margin-left: .3rem;
     cursor: pointer;
     text-align: center;
+   
 }
 
 .header .icons div:hover{
     background: #1b4d3e;
     color:#fff;
+    
+    
 }
 
 #menu-btn{
@@ -187,22 +196,24 @@ section{
 }
 
 .header .shopping-cart{
+    
     position: absolute;
     top:110%; right:-110%;
     padding:1rem;
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
     width:35rem;
-    background: var(--card);
-    height: 50rem;
+    max-height: 50rem;
     overflow: scroll;
+    background: var(--card);
+    
     
 }
 .header .shopping-cart h1{
     text-align: center;
     color: #eee;
     font-size: 2rem;
-    transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.2s;
 }
 .header .shopping-cart h1:hover{
     text-shadow:0.1rem 0.1rem 15px #74C365;
@@ -220,6 +231,15 @@ section{
     position: relative;
     margin:1rem 0;
     display: none;
+    transition: all 0.3s;
+    
+}
+
+.header .shopping-cart .box:hover{
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 3rem;
+    transform: scale(1.08);
+    
 }
 
 .header .shopping-cart .box img{
@@ -237,7 +257,7 @@ section{
 }
 
 .header .shopping-cart .box .fa-trash:hover{
-    color:var(--orange);
+    color:rgb(244, 119, 119);
 }
 
 .header .shopping-cart .box .content h3{
@@ -260,6 +280,7 @@ section{
     padding:1rem 0;
     text-align: center;
     color:rgb(193, 190, 190);
+    display: none;
 }
 
 .header .shopping-cart .btn{
@@ -320,8 +341,8 @@ section{
    margin-top: 10rem;
    margin-bottom: -1rem;
     width: 100%;
-    height: 65vh;
-    background: url(../image/banner.jpg) no-repeat;
+    height: 60vh;
+    background: url(../image/banner1.jpg) no-repeat;
     background-position: center;
     background-size: 100% 100%; 
   /* padding: 17rem; */
@@ -522,6 +543,8 @@ section{
 
 .blogs .box-container .box .content{
     padding:2rem;
+    
+   
 }
 
 .blogs .box-container .box .content .icons{
@@ -559,6 +582,7 @@ section{
     color:white;
     font-size: 1.5rem;
     padding:.5rem 0;
+    
 }
 
 .footer{
@@ -721,6 +745,7 @@ section{
         font-size: 2rem;
         margin:2rem 2.5rem;
         display: block;
+        
     }
 
 }
