@@ -229,7 +229,7 @@ section{
     align-items: center;
     gap:1rem;
     position: relative;
-    margin:1rem 1rem;
+    margin:1rem 1.2rem;
     display: none;
     transition: all 0.3s;
     
