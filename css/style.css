@@ -34,6 +34,9 @@ body{
     background:radial-gradient(circle, rgba(1,68,33,1) 0%, rgb(229, 243, 223) 100%);
 }
 
+body::-webkit-scrollbar{
+    display: none;
+  }
 section{
     padding:2rem 9%;
 }
@@ -205,10 +208,11 @@ section{
     width:35rem;
     max-height: 50rem;
     overflow: scroll;
-    background: var(--card);
-    
-    
+    background: var(--card);  
 }
+.header .shopping-cart::-webkit-scrollbar{
+    display: none;
+  }
 .header .shopping-cart h1{
     text-align: center;
     color: #eee;
